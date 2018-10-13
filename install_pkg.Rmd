@@ -1,0 +1,91 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+### Database 관련 Packages
+```{r}
+if("rJava" %in% installed.packages("rJava") == FALSE)install.packages("rJava")
+library(rJava)
+if("DBI" %in% installed.packages("DBI") == FALSE)install.packages("DBI")
+library(DBI)
+if("RJDBC" %in% installed.packages("RJDBC") == FALSE)install.packages("RJDBC")
+library(RJDBC)
+if("XML" %in% installed.packages("XML") == FALSE)install.packages("XML")
+library(XML)
+if("memoise" %in% installed.packages("memoise") == FALSE)install.packages("memoise")
+library(memoise)
+```
+
+### String 처리 Packages
+```{r}
+if("dplyr" %in% installed.packages("dplyr") == FALSE)install.packages("dplyr")
+library(dplyr)
+if("data.table" %in% installed.packages("data.table") == FALSE)install.packages("data.table")
+library(data.table)
+if("stringi" %in% installed.packages("stringi") == FALSE)install.packages("stringi")
+library(stringi)
+if("stringr" %in% installed.packages("stringr") == FALSE)install.packages("stringr")
+library(stringr)
+if("plyr" %in% installed.packages("plyr") == FALSE)install.packages("plyr")
+library(plyr)
+```
+
+### 텍스트 마이닝 Package
+```{r}
+if("KoNLP" %in% installed.packages("KoNLP") == FALSE)install.packages("KoNLP")
+      library(KoNLP)
+if("tm" %in% installed.packages("tm") == FALSE)install.packages("tm")
+      library(tm)
+if("wordcloud" %in% installed.packages("wordcloud") == FALSE)install.packages("wordcloud")
+      library(wordcloud)
+```
+
+### 웹크롤링 & 샤이니 Package
+```{r}
+if("rvest" %in% installed.packages("rvest") == FALSE)install.packages("rvest")
+      library(rvest)
+if("shiny" %in% installed.packages("shiny") == FALSE)install.packages("shiny")
+      library(shiny)
+```
+
+### 차트 Package
+```{r}
+if("ggplot2" %in% installed.packages("ggplot2") == FALSE)install.packages("ggplot2")
+      library(ggplot2)
+if("RColorBrewer" %in% installed.packages("RColorBrewer") == FALSE)install.packages("RColorBrewer")
+      library(RColorBrewer)
+if("reshape" %in% installed.packages("reshape") == FALSE)install.packages("reshape")
+      library(reshape)
+if("ggthemes" %in% installed.packages("ggthemes") == FALSE)install.packages("ggthemes")
+      library(ggthemes)
+```
+
+### Font Package
+```{r}
+if("extrafont" %in% installed.packages("extrafont") == FALSE)install.packages("extrafont")
+      library(extrafont)
+```
+
+### Google Package
+```{r}
+if("RGA" %in% installed.packages("RGA") == FALSE)install.packages("RGA")
+      library(RGA)
+if("ggmap" %in% installed.packages("ggmap") == FALSE)install.packages("ggmap")
+      library(ggmap)
+if("googleVis" %in% installed.packages("googleVis") == FALSE)install.packages("googleVis")
+      library(googleVis)
+```
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
